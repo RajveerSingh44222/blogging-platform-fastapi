@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkflow - Tags</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+
+    <nav>
+      <div class="nav-logo"><a href="index.html">ink<span>.</span>flow</a></div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="tags.html" class="active">Tags</a>
+        <a href="saved.html">Saved</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="write.html" class="btn-primary">Start Writing</a>
+      </div>
+    </nav>
+
+    <main class="page-section active">
+      <div id="messageBox" style="display:none; padding:12px; margin:16px 0; border-radius:8px;"></div>
+
+      <div class="section-title">Browse by Tags</div>
+      <div class="section-sub">Choose a tag to view matching blogs.</div>
+
+      <div id="tagButtons" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;"></div>
+
+      <div id="tagResults"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-copy">© 2026 inkflow. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="write.html">Write</a>
+        <a href="saved.html">Saved</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadTagsPage();
+  </script>
+</body>
+</html>

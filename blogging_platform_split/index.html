@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkflow - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+
+    <nav>
+      <div class="nav-logo"><a href="index.html">ink<span>.</span>flow</a></div>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="tags.html">Tags</a>
+        <a href="saved.html">Saved</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="write.html" class="btn-primary">Start Writing</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <div class="hero-eyebrow"><span class="accent-dot"></span>Publishing platform for thinkers</div>
+        <h1 class="hero-title">Ideas that <em>ignite</em> the world.</h1>
+        <p class="hero-sub">
+          Discover blogs, publish your thoughts, and build your writing space with Inkflow.
+        </p>
+        <div class="hero-actions">
+          <a href="explore.html" class="hero-btn primary">Start Reading</a>
+          <a href="write.html" class="hero-btn secondary">Become a Writer</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="featured-card">
+          <div class="featured-img">
+            <span class="featured-img-label">Featured Story</span>
+          </div>
+          <div class="featured-body">
+            <div class="featured-tag">Platform</div>
+            <div class="featured-title">Welcome to Inkflow — read, write and share powerful ideas.</div>
+            <div class="featured-meta">
+              <div class="avatar">IF</div>
+              <div class="meta-text">Inkflow Team · Blogging Platform</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-num">12<span>k</span></div>
+        <div class="stat-label">Writers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">84<span>k</span></div>
+        <div class="stat-label">Stories</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3<span>.2m</span></div>
+        <div class="stat-label">Readers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">940<span>k</span></div>
+        <div class="stat-label">Comments</div>
+      </div>
+    </div>
+
+    <main class="page-section active">
+      <div id="messageBox" style="display:none; padding:12px; margin:16px 0; border-radius:8px;"></div>
+
+      <div class="section-title">Latest Blogs</div>
+      <div class="section-sub">Read the newest stories from the platform.</div>
+
+      <div id="latestBlogs"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-copy">© 2026 inkflow. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="tags.html">Tags</a>
+        <a href="saved.html">Saved</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadLatestBlogs();
+  </script>
+</body>
+</html>

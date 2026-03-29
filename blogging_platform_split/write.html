@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkflow - Write</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+
+    <nav>
+      <div class="nav-logo"><a href="index.html">ink<span>.</span>flow</a></div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="tags.html">Tags</a>
+        <a href="saved.html">Saved</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="write.html" class="btn-primary">Start Writing</a>
+      </div>
+    </nav>
+
+    <main class="page-section active">
+      <div id="messageBox" style="display:none; padding:12px; margin:16px 0; border-radius:8px;"></div>
+
+      <div class="section-title">Write a Blog</div>
+      <div class="section-sub">Create and publish a new blog post.</div>
+
+      <form id="blogForm" onsubmit="publishBlog(event)" class="writer-form">
+        <input type="text" id="blogTitle" placeholder="Blog title" required />
+        <input type="text" id="blogSubtitle" placeholder="Blog subtitle" />
+        <input type="text" id="blogAuthor" placeholder="Author name" required />
+
+        <select id="blogCategory" required>
+          <option value="">Select category</option>
+          <option value="design">Design</option>
+          <option value="tech">Tech</option>
+          <option value="culture">Culture</option>
+        </select>
+
+        <input type="text" id="blogTags" placeholder="Tags (example: python,fastapi,mysql)" />
+        <input type="text" id="blogCoverImage" placeholder="Cover image URL" />
+        <textarea id="blogContent" placeholder="Write your blog content..." required></textarea>
+
+        <div class="writer-actions">
+          <button type="submit" class="btn-primary">Publish Blog</button>
+          <a href="explore.html" class="btn-ghost" style="display:inline-flex; align-items:center; justify-content:center; text-decoration:none;">Go to Explore</a>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-copy">© 2026 inkflow. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="tags.html">Tags</a>
+        <a href="saved.html">Saved</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

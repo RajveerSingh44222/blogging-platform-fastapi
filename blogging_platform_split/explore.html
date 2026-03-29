@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkflow - Explore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+
+    <nav>
+      <div class="nav-logo"><a href="index.html">ink<span>.</span>flow</a></div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html" class="active">Explore</a>
+        <a href="tags.html">Tags</a>
+        <a href="saved.html">Saved</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="write.html" class="btn-primary">Start Writing</a>
+      </div>
+    </nav>
+
+    <main class="page-section active">
+      <div id="messageBox" style="display:none; padding:12px; margin:16px 0; border-radius:8px;"></div>
+
+      <div class="section-title">Explore Blogs</div>
+      <div class="section-sub">Search and browse all published blogs.</div>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by title, author, category or tags"
+          style="flex:1; min-width:260px; padding:12px; border-radius:8px; border:1px solid #333; background:#111; color:#fff;"
+        />
+        <button class="btn-primary" onclick="searchBlogs()">Search</button>
+        <button class="btn-ghost" onclick="loadAllBlogs()">Reset</button>
+      </div>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;">
+        <button class="tag-chip" onclick="filterByCategory('design')">Design</button>
+        <button class="tag-chip" onclick="filterByCategory('tech')">Tech</button>
+        <button class="tag-chip" onclick="filterByCategory('culture')">Culture</button>
+      </div>
+
+      <div id="explorePosts"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-copy">© 2026 inkflow. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="write.html">Write</a>
+        <a href="tags.html">Tags</a>
+        <a href="saved.html">Saved</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadAllBlogs();
+  </script>
+</body>
+</html>
